@@ -1,0 +1,26 @@
+
+.button{
+    -fx-background-color:#003333;
+    -fx-border-color: #00171f;
+    -fx-text-fill: #ffffff;
+    -fx-snap-to-pixel: true;   
+}
+
+.opButtons{
+    -fx-background-color: #00ffcc;
+    -fx-text-fill: #1b1b1b;
+    -fx-snap-to-pixel: true;
+}
+
+.outputScrn{
+    -fx-background-color: #00171f;
+    -fx-border-color: #00171f;
+    -fx-snap-to-pixel: true;
+    -fx-text-fill: #ffffff;
+}
+
+.histScrn{
+    -fx-background-color: #cccccc;
+    -fx-border-color: #00171f;
+    -fx-text-fill: #ffffff;
+}

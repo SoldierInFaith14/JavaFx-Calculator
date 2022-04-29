@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="screen" prefHeight="385.0" prefWidth="581.0" styleClass="mainFxmlClass" stylesheets="@calc_css.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Calculator.CalculatorController">
+   <children>
+      <TextField id="outputScrn" fx:id="outputScrn" alignment="BASELINE_RIGHT" cacheShape="false" editable="false" focusTraversable="false" prefHeight="110.0" prefWidth="400.0" promptText="0" styleClass="outputScrn" stylesheets="@calc_css.css">
+         <font>
+            <Font name="Futura Medium" size="24.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Button id="button" fx:id="four" layoutX="100.0" layoutY="220.0" mnemonicParsing="false" onAction="#getInput" prefHeight="55.0" prefWidth="75.0" stylesheets="@calc_css.css" text="4">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button id="button" fx:id="seven" layoutX="100.0" layoutY="165.0" mnemonicParsing="false" onAction="#getInput" prefHeight="55.0" prefWidth="75.0" stylesheets="@calc_css.css" text="7">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button id="button" fx:id="five" layoutX="175.0" layoutY="220.0" mnemonicParsing="false" onAction="#getInput" prefHeight="55.0" prefWidth="75.0" stylesheets="@calc_css.css" text="5">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="subtractBtn" layoutX="325.0" layoutY="220.0" mnemonicParsing="false" onAction="#subtraction" prefHeight="55.0" prefWidth="75.0" styleClass="opButtons" stylesheets="@calc_css.css" text="-">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="equalsBtn" layoutX="325.0" layoutY="330.0" mnemonicParsing="false" onAction="#calculateResult" prefHeight="55.0" prefWidth="75.0" styleClass="opButtons" stylesheets="@calc_css.css" text="=">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button id="button" fx:id="three" layoutX="250.0" layoutY="275.0" mnemonicParsing="false" onAction="#getInput" prefHeight="55.0" prefWidth="75.0" stylesheets="@calc_css.css" text="3">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button id="button" fx:id="nine" layoutX="250.0" layoutY="165.0" mnemonicParsing="false" onAction="#getInput" prefHeight="55.0" prefWidth="75.0" stylesheets="@calc_css.css" text="9">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button id="button" fx:id="two" layoutX="175.0" layoutY="275.0" mnemonicParsing="false" onAction="#getInput" prefHeight="55.0" prefWidth="75.0" stylesheets="@calc_css.css" text="2">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="divideBtn" layoutX="325.0" layoutY="110.0" mnemonicParsing="false" onAction="#div" prefHeight="55.0" prefWidth="75.0" styleClass="opButtons" stylesheets="@calc_css.css" text="/">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button id="button" fx:id="six" layoutX="250.0" layoutY="220.0" mnemonicParsing="false" onAction="#getInput" prefHeight="55.0" prefWidth="75.0" stylesheets="@calc_css.css" text="6">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button id="button" fx:id="eight" layoutX="175.0" layoutY="165.0" mnemonicParsing="false" onAction="#getInput" prefHeight="55.0" prefWidth="75.0" stylesheets="@calc_css.css" text="8">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button id="button" fx:id="one" layoutX="100.0" layoutY="275.0" mnemonicParsing="false" onAction="#getInput" prefHeight="55.0" prefWidth="75.0" stylesheets="@calc_css.css" text="1">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="multiplyBtn" layoutX="325.0" layoutY="165.0" mnemonicParsing="false" onAction="#mult" prefHeight="55.0" prefWidth="75.0" styleClass="opButtons" stylesheets="@calc_css.css" text="x">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="addBtn" layoutX="325.0" layoutY="275.0" mnemonicParsing="false" onAction="#addition" prefHeight="55.0" prefWidth="75.0" styleClass="opButtons" stylesheets="@calc_css.css" text="+">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button id="button" fx:id="decimalBtn" layoutX="250.0" layoutY="330.0" mnemonicParsing="false" onAction="#getInput" prefHeight="55.0" prefWidth="75.0" stylesheets="@calc_css.css" text=".">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button id="button" fx:id="clearBtn" layoutX="100.0" layoutY="110.0" mnemonicParsing="false" onAction="#getInput" prefHeight="55.0" prefWidth="75.0" stylesheets="@calc_css.css" text="C">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button id="button" fx:id="zero" layoutX="100.0" layoutY="330.0" mnemonicParsing="false" onAction="#getInput" prefHeight="55.0" prefWidth="150.0" stylesheets="@calc_css.css" text="0">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button id="button" fx:id="percent" layoutX="250.0" layoutY="110.0" mnemonicParsing="false" onAction="#percent" prefHeight="55.0" prefWidth="75.0" stylesheets="@calc_css.css" text="\%">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button id="button" fx:id="plusMinus" layoutX="175.0" layoutY="110.0" mnemonicParsing="false" onAction="#pM" prefHeight="55.0" prefWidth="75.0" stylesheets="@calc_css.css" text="+/-">
+         <font>
+            <Font name="Futura Medium" size="19.0" />
+         </font>
+      </Button>
+      <Button id="button" fx:id="exponentBtn" layoutY="110.0" mnemonicParsing="false" onAction="#findPower" prefHeight="55.0" prefWidth="100.0" stylesheets="@calc_css.css" text="x^y">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button id="button" fx:id="sqRootBtn" layoutY="165.0" mnemonicParsing="false" onAction="#findSqrt" prefHeight="55.0" prefWidth="100.0" stylesheets="@calc_css.css" text="√x">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button id="button" fx:id="moduloBtn" layoutY="220.0" mnemonicParsing="false" onAction="#findMod" prefHeight="55.0" prefWidth="100.0" stylesheets="@calc_css.css" text="modulo">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button id="button" fx:id="history" layoutY="275.0" mnemonicParsing="false" onAction="#getHistory" prefHeight="55.0" prefWidth="100.0" stylesheets="@calc_css.css" text="HIST">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button id="button" fx:id="clrHistScrn" layoutX="50.0" layoutY="330.0" mnemonicParsing="false" onAction="#clearHistoryScreen" prefHeight="55.0" prefWidth="50.0" stylesheets="@calc_css.css" text="CS">
+         <font>
+            <Font name="Futura Medium" size="18.0" />
+         </font>
+      </Button>
+      <Button id="button" fx:id="clrHist" layoutY="330.0" mnemonicParsing="false" onAction="#clearHistory" prefHeight="55.0" prefWidth="50.0" stylesheets="@calc_css.css" text="CH">
+         <font>
+            <Font name="Futura Medium" size="16.0" />
+         </font>
+      </Button>
+      <ListView id="histScrn" fx:id="histScrn" layoutX="400.0" prefHeight="385.0" prefWidth="300.0" style="-fx-background-color: #00171f#00171f;" styleClass="histScrn" stylesheets="@calc_css.css" />
+   </children>
+</AnchorPane>
